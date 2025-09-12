@@ -38,7 +38,7 @@ export default function Home() {
         <section id="waitlist" className="mt-20 rounded-2xl bg-white p-6 shadow">
           <h2 className="text-xl font-semibold">Get early access</h2>
             <p className="mt-1 text-[#6A7381]">We&apos;ll invite you as soon as Veribite is ready.</p>
-          <form className="mt-4 flex gap-3" action="https://formspree.io/f/your-code" method="POST">
+          <form className="mt-4 flex gap-3" action="https://formspree.io/f/mkgvergo" method="POST">
             <input
               name="email"
               type="email"

@@ -21,7 +21,7 @@ export default function Home() {
             <ul className="mt-6 space-y-2">
               <li>• Instant allergen warnings</li>
               <li>• Calorie & macro fit</li>
-              <li>• Smart swaps when it's a No-Go</li>
+              <li>• Smart swaps when it&apos;s a No-Go</li>
             </ul>
             <a href="#waitlist" className="mt-8 inline-flex rounded-xl bg-[#2F70F7] px-5 py-3 text-white font-semibold">
               Get early access
@@ -37,7 +37,7 @@ export default function Home() {
 
         <section id="waitlist" className="mt-20 rounded-2xl bg-white p-6 shadow">
           <h2 className="text-xl font-semibold">Get early access</h2>
-          <p className="mt-1 text-[#6A7381]">We'll invite you as soon as Veribite is ready.</p>
+            <p className="mt-1 text-[#6A7381]">We&apos;ll invite you as soon as Veribite is ready.</p>
           <form className="mt-4 flex gap-3" action="https://formspree.io/f/your-code" method="POST">
             <input
               name="email"

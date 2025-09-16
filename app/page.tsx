@@ -3,8 +3,17 @@ export default function Home() {
     <main className="min-h-screen bg-[#F7F9FC] text-[#12161C]">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <header className="flex items-center justify-between">
-          <div className="text-2xl font-bold tracking-tight">
-            veribite<span className="text-[#2F70F7]">✓</span>
+          <div className="flex items-center px-4">
+            <img 
+              src="/veribite-text.svg" 
+              alt="Veribite" 
+              className="h-5 w-auto hidden md:block"
+            />
+            <img 
+              src="/veribite-icon.svg" 
+              alt="Veribite" 
+              className="h-5 w-auto md:-ml-2 sm:h-5"
+            />
           </div>
           <a href="#waitlist" className="rounded-xl bg-[#2F70F7] px-4 py-2 text-white font-semibold">
             Join waitlist

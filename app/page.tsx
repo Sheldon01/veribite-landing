@@ -12,7 +12,7 @@ export default function Home() {
             <img 
               src="/veribite-icon.svg" 
               alt="Veribite" 
-              className="h-5 w-auto md:-ml-2 sm:h-5"
+              className="h-5 w-auto md:-ml-3 sm:h-5"
             />
           </div>
           <a href="#waitlist" className="rounded-xl bg-[#2F70F7] px-4 py-2 text-white font-semibold">

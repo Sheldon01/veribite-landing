@@ -39,7 +39,11 @@ export default function Home() {
 
           <div className="rounded-2xl bg-white p-6 shadow-[0_1px_2px_rgba(16,19,23,.06),0_8px_24px_rgba(16,19,23,.08)]">
             {/* Replace with a screenshot of your app later */}
-            <div className="h-80 rounded-xl bg-[#E8F0FE]" />
+            <img 
+              src="/GoNoMockup.png" 
+              alt="Veribite App Preview" 
+              className="h-80 w-full rounded-xl object-cover object-top"
+            />
             <p className="mt-3 text-sm text-[#6A7381]">App preview</p>
           </div>
         </section>

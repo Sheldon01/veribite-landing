@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Scan any supermarket product and get a personal Go/No-Go verdict with clear reasons and healthier swaps.",
   icons: {
-    icon: "/veribite-icon.svg",
+    icon: "/veribite-icon.png",
   },
   openGraph: { 
     title: "Veribite", 

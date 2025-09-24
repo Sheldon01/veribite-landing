@@ -31,7 +31,7 @@ export default function Home() {
               <li>• Personalised allergen warnings</li>
               <li>• Your calorie & macro fit</li>
               <li>• Smart swaps when it&apos;s a No-Go</li>
-              <li>• Personalised shopping session tracking</li>
+              <li>• Shopping session tracking</li>
               <li>• Recipe generation from your completed basket</li>
               <li>• Basket analysis & nutrient recommendations (optional)</li>
             </ul>

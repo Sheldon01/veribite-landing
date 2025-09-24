@@ -28,9 +28,12 @@ export default function Home() {
               with clear reasons and healthier swaps.
             </p>
             <ul className="mt-6 space-y-2">
-              <li>• Instant allergen warnings</li>
-              <li>• Calorie & macro fit</li>
+              <li>• Personalised allergen warnings</li>
+              <li>• Your calorie & macro fit</li>
               <li>• Smart swaps when it&apos;s a No-Go</li>
+              <li>• Personalised shopping session tracking</li>
+              <li>• Recipe generation from your completed basket</li>
+              <li>• Basket analysis & nutrient recommendations (optional)</li>
             </ul>
             <a href="#waitlist" className="mt-8 inline-flex rounded-xl bg-[#2F70F7] px-5 py-3 text-white font-semibold">
               Get early access

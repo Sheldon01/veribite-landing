@@ -27,13 +27,13 @@ export default function Home() {
               Scan any supermarket product and get a personal <b>Go/No-Go</b> verdict in seconds —
               with clear reasons and healthier swaps.
             </p>
-            <ul className="mt-6 space-y-2">
-              <li>• Personalised allergen warnings</li>
-              <li>• Your calorie & macro fit</li>
-              <li>• Smart swaps when it&apos;s a No-Go</li>
-              <li>• Shopping session tracking</li>
-              <li>• Recipe generation from your completed basket</li>
-              <li>• Basket analysis & nutrient recommendations (optional)</li>
+            <ul className="mt-6 space-y-2 list-disc list-outside ml-4">
+              <li>Personalised allergen warnings</li>
+              <li>Your calorie & macro fit</li>
+              <li>Smart swaps when it&apos;s a No-Go</li>
+              <li>Shopping session tracking</li>
+              <li>Recipe generation from your completed basket</li>
+              <li>Basket analysis & nutrient recommendations (optional)</li>
             </ul>
             <a href="#waitlist" className="mt-8 inline-flex rounded-xl bg-[#2F70F7] px-5 py-3 text-white font-semibold">
               Get early access

@@ -24,16 +24,14 @@ export default function Home() {
           <div>
             <h1 className="text-5xl font-extrabold leading-tight">Verify every bite.</h1>
             <p className="mt-4 text-lg text-[#6A7381]">
-              Scan any supermarket product and get a personal <b>Go/No-Go</b> verdict in seconds —
-              with clear reasons and healthier swaps.
+              Scan a product&apos;s barcode and instantly know if it&apos;s safe for you —
+              personalised <b>allergen warnings</b>, a clear <b>Go/No-Go</b> verdict, and healthier swaps in seconds.
             </p>
             <ul className="mt-6 space-y-2 list-disc list-outside ml-4">
               <li>Personalised allergen warnings</li>
-              <li>Your calorie & macro fit</li>
               <li>Smart swaps when it&apos;s a No-Go</li>
               <li>Shopping session tracking</li>
               <li>Recipe generation from your completed basket</li>
-              <li>Basket analysis & nutrient recommendations (optional)</li>
             </ul>
             <a href="#waitlist" className="mt-8 inline-flex rounded-xl bg-[#2F70F7] px-5 py-3 text-white font-semibold">
               Get early access

@@ -237,8 +237,13 @@ export default function Home() {
       <section className="vb-cta-section" id="waitlist">
         <h2 className="vb-cta-h2 reveal">Shop with confidence.<br />Finally.</h2>
         <p className="vb-cta-sub reveal">Join the waitlist and be first to know when Veribite is ready for you.</p>
-        <div className={`vb-waitlist-wrap reveal${submitted ? " submitted" : ""}`}>
-          <form className="vb-email-form vb-waitlist-form" onSubmit={handleSubmit}>
+        {submitted ? (
+          <div className="vb-success reveal">
+            <div className="vb-success-icon">✓</div>
+            <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
+          </div>
+        ) : (
+          <form className="vb-email-form reveal" onSubmit={handleSubmit}>
             <input
               ref={emailRef}
               type="email"
@@ -248,11 +253,7 @@ export default function Home() {
             />
             <button type="submit" className="vb-btn-primary">Join</button>
           </form>
-          <div className="vb-success">
-            <div className="vb-success-icon">✓</div>
-            <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
-          </div>
-        </div>
+        )}
         <p className="vb-cta-note reveal">
           We&apos;ll invite you as soon as Veribite is ready. No spam, ever.
           By joining, you agree to our{" "}

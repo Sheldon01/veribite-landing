@@ -68,9 +68,14 @@ body::before {
   gap: 8px;
 }
 .vb-nav-icon {
-  height: 22px;
-  width: auto;
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
   flex-shrink: 0;
+  display: block;
+  align-self: center;
+  position: relative;
+  top: 1px;
   animation: pulse-dot 2s ease-in-out infinite;
 }
 .vb-nav-cta {

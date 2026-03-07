@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,12 +35,12 @@ export default function Home() {
     e.preventDefault();
     const email = emailRef.current?.value;
     if (!email || !email.includes("@")) return;
-    const res = await fetch("https://formspree.io/f/mkgvergo", {
+    setSubmitted(true);
+    fetch("https://formspree.io/f/mkgvergo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
-    if (res.ok) setSubmitted(true);
   };
 
   return (
@@ -250,23 +250,21 @@ export default function Home() {
             <button type="submit" className="vb-btn-primary">Join</button>
           </form>
         )}
-        <AnimatePresence>
-          {submitted && (
-            <motion.div
-              initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{
-                opacity: { duration: 0.7, ease: "easeInOut" },
-                y: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
-                filter: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
-              }}
-              className="vb-success"
-            >
-              <div className="vb-success-icon">✓</div>
-              <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {submitted && (
+          <motion.div
+            initial={{ opacity: 0, y: 16, filter: 'blur(12px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            transition={{
+              duration: 0.9,
+              ease: [0.16, 1, 0.3, 1],
+              opacity: { duration: 1.2 },
+            }}
+            className="vb-success"
+          >
+            <div className="vb-success-icon">✓</div>
+            <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
+          </motion.div>
+        )}
         <p className="vb-cta-note reveal">
           We&apos;ll invite you as soon as Veribite is ready. No spam, ever.
           By joining, you agree to our{" "}

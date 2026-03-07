@@ -443,7 +443,6 @@ body::before {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  animation: materialise 0.9s ease-in-out forwards;
 }
 @keyframes materialise {
   0%   { opacity: 0; transform: translateY(8px); }

@@ -132,9 +132,9 @@ body::before {
 .vb-h1 {
   font-family: var(--font-syne), sans-serif;
   font-size: clamp(52px, 8vw, 96px);
-  font-weight: 800;
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards 0.4s;
@@ -293,8 +293,8 @@ body::before {
 .vb-h2 {
   font-family: var(--font-syne), sans-serif;
   font-size: clamp(32px, 5vw, 52px);
-  font-weight: 800; line-height: 1.1;
-  letter-spacing: -0.02em; margin-bottom: 20px;
+  font-weight: 700; line-height: 1.15;
+  letter-spacing: -0.015em; margin-bottom: 20px;
 }
 .vb-section-sub {
   font-size: 18px; color: var(--text-sub);

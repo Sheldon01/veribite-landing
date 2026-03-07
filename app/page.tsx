@@ -24,14 +24,13 @@ export default function Home() {
           <div>
             <h1 className="text-5xl font-extrabold leading-tight">Verify every bite.</h1>
             <p className="mt-4 text-lg text-[#6A7381]">
-              Scan a product&apos;s barcode and instantly know if it&apos;s safe for you —
-              personalised <b>allergen warnings</b>, a clear <b>Go/No-Go</b> verdict, and healthier swaps in seconds.
+              Scan a product&apos;s barcode and instantly know if it&apos;s safe for you.
+              Personalised <b>allergen warnings</b>, a clear <b>Go/No-Go</b> verdict, and healthier swaps in seconds.
             </p>
             <ul className="mt-6 space-y-2 list-disc list-outside ml-4">
               <li>Personalised allergen warnings</li>
               <li>Smart swaps when it&apos;s a No-Go</li>
-              <li>Shopping session tracking</li>
-              <li>Recipe generation from your completed basket</li>
+              <li>&ldquo;May contain&rdquo; warnings decoded for your allergies</li>
             </ul>
             <a href="#waitlist" className="mt-8 inline-flex rounded-xl bg-[#2F70F7] px-5 py-3 text-white font-semibold">
               Get early access
@@ -45,7 +44,6 @@ export default function Home() {
               alt="Veribite App Preview" 
               className="h-80 w-full rounded-xl object-contain"
             />
-            <p className="mt-3 text-sm text-[#6A7381]">App preview</p>
           </div>
         </section>
 

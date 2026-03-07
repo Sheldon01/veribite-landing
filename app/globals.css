@@ -75,7 +75,7 @@ body::before {
   display: block;
   align-self: center;
   position: relative;
-  top: 3px;
+  top: 2.5px;
   animation: pulse-dot 2s ease-in-out infinite;
 }
 .vb-nav-cta {

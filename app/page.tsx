@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -237,12 +238,7 @@ export default function Home() {
       <section className="vb-cta-section" id="waitlist">
         <h2 className="vb-cta-h2 reveal">Shop with confidence.<br />Finally.</h2>
         <p className="vb-cta-sub reveal">Join the waitlist and be first to know when Veribite is ready for you.</p>
-        {submitted ? (
-          <div className="vb-success reveal">
-            <div className="vb-success-icon">✓</div>
-            <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
-          </div>
-        ) : (
+        {!submitted && (
           <form className="vb-email-form reveal" onSubmit={handleSubmit}>
             <input
               ref={emailRef}
@@ -254,6 +250,19 @@ export default function Home() {
             <button type="submit" className="vb-btn-primary">Join</button>
           </form>
         )}
+        <AnimatePresence>
+          {submitted && (
+            <motion.div
+              initial={{ opacity: 0, y: 12, filter: "blur(8px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
+              className="vb-success"
+            >
+              <div className="vb-success-icon">✓</div>
+              <p className="vb-success-text">You&apos;re on the list. We&apos;ll be in touch soon.</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <p className="vb-cta-note reveal">
           We&apos;ll invite you as soon as Veribite is ready. No spam, ever.
           By joining, you agree to our{" "}

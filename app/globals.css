@@ -67,13 +67,11 @@ body::before {
   align-items: center;
   gap: 8px;
 }
-.vb-nav-logo .dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--blue);
-  animation: pulse-dot 2s ease-in-out infinite;
-  display: inline-block;
+.vb-nav-icon {
+  height: 22px;
+  width: auto;
   flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
 }
 .vb-nav-cta {
   background: var(--blue-dim);

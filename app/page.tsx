@@ -47,7 +47,7 @@ export default function Home() {
       {/* NAV */}
       <nav className={`vb-nav${scrolled ? " scrolled" : ""}`}>
         <a href="#" className="vb-nav-logo">
-          <span className="dot" />
+          <img src="/veribite-icon.svg" alt="" className="vb-nav-icon" />
           veribite
         </a>
         <a href="#waitlist" className="vb-nav-cta">Join waitlist</a>

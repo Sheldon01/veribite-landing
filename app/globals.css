@@ -437,6 +437,63 @@ body::before {
 .vb-email-input:focus { border-color: rgba(96,165,250,0.4); }
 .vb-cta-note { margin-top: 16px; font-size: 12px; color: var(--text-muted); }
 
+/* WAITLIST SUCCESS STATE */
+.vb-waitlist-wrap {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  height: 52px;
+}
+.vb-waitlist-form {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  gap: 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.vb-waitlist-wrap.submitted .vb-waitlist-form {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}
+.vb-success {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease 0.2s, transform 0.4s ease 0.2s;
+  pointer-events: none;
+}
+.vb-waitlist-wrap.submitted .vb-success {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.vb-success-icon {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #0a2a0a;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  animation: verdict-appear 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.vb-success-text {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* FOOTER */
 .vb-footer {
   padding: 40px 24px;

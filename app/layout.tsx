@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Veribite — verify every bite",
+  title: "Veribite — Verify every bite",
   description:
     "Scan any supermarket product and get a personal Go/No-Go verdict with clear reasons and healthier swaps.",
   icons: {
     icon: "/veribite-icon.ico",
   },
-  openGraph: { 
-    title: "Veribite", 
-    url: "https://veribite.com", 
-    siteName: "Veribite", 
-    type: "website" 
+  openGraph: {
+    title: "Veribite",
+    url: "https://veribite.com",
+    siteName: "Veribite",
+    type: "website",
   },
 };
 
@@ -34,9 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${syne.variable} ${dmSans.variable} antialiased`}>
         {children}
       </body>
     </html>
